@@ -1,2 +1,0 @@
-# APDS
-Applied Data Science
