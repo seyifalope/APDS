@@ -5,27 +5,6 @@ Created on Wed Mar  1 22:12:03 2023
 @author: SEYI FALOPE 
 """
 
-
-"""
-SUMMARY OF THE DATASET
-The dataset illustrates the crime statistics of various crimes and their crime cases 
-in Bangladesh, a densely populated country in Asia across a decade period, 
-from year 2010 to 2019.
-
-To visulaizing and draw insights from the data,3 types of visualization methods will be
-employed, Namely:
-    
-Line plot: A line plot is used to displays data points over a period of time, hence line 
-plot be employed to show crime cases for each crime over the decade    
-
-Pie Chart: A pie chart helps to displays categories of elements in relative proportion 
-to each other. This will be employed to show the proportion of each crime in relation to
-each other
-
-Bar Chart: A bar chart helps us compare different data points together. This will be employed
-to show the compare the total crimes case across the decade
-"""
-
 # Github Link:
 # Dataset Link:https://www.kaggle.com/datasets/firozkabir1/crime-statistics-of-bangladesh-2010-2019
 
@@ -47,8 +26,6 @@ The dimension of the set
 The general information about the data and,
 if the data has no missing values
 """
-
-print(crime.describe()) # checking basic descriptive statistics of the data
 
 print(crime.shape)  # The data has 180 rows and 18 columns
 
@@ -233,6 +210,11 @@ def plot_bar(x_variable, y_variable, xlabel, ylabel, title,  xticks=None, **othe
 # plotting the bar chart
 plot_bar(years, crime_year, 'Years', 'No of Cases',
          'Crime Statistics Of Bangladesh 2010-2019', True, color='red')
+
+
+# Using
+
+plt.scatter(crime.index, crime['Murder'])
 
 
 
