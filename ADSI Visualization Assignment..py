@@ -170,6 +170,7 @@ crime_year = [6390, 6408, 6587, 7550, 7291, 6409, 5473, 5258, 5647, 534]
 
 
 
+
 # Defining a function to plot a bar graph for the selected crime cases against each year
 def plot_bar(x_variable, y_variable, xlabel, ylabel, title,  xticks=None, **others):
     """
@@ -209,4 +210,5 @@ def plot_bar(x_variable, y_variable, xlabel, ylabel, title,  xticks=None, **othe
 # plotting the bar chart
 plot_bar(years, crime_year, 'Years', 'No of Cases',
          'Crime Statistics Of Bangladesh 2010-2019', True, color='red')
+
 
