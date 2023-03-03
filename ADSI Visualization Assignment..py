@@ -212,9 +212,7 @@ plot_bar(years, crime_year, 'Years', 'No of Cases',
          'Crime Statistics Of Bangladesh 2010-2019', True, color='red')
 
 
-# Using
 
-plt.scatter(crime.index, crime['Murder'])
 
 
 
